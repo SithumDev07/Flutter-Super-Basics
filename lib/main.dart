@@ -16,19 +16,36 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blue[800],
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            print('Puchiii');
-          },
-          child: Text('Say 👋 Puchii'),
-          style: ElevatedButton.styleFrom(
-              primary: Colors.blue[800],
-              padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 15.0),
-              textStyle: TextStyle(
-                fontSize: 18.0,
-              )),
-        ),
+      body: Row(
+        children: <Widget>[
+          Expanded(
+            flex: 10,
+            child: Image.asset('assets/nissan-r35.jpg'),
+          ),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.deepOrangeAccent,
+              child: Text('1'),
+            ),
+          ),
+          Expanded(
+            flex: 5,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('1'),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('1'),
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('+'),
