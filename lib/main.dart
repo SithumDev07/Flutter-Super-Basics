@@ -17,14 +17,17 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue[800],
       ),
       body: Center(
-        child: Text(
-          'Hello Amigos',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 5.0,
-            fontFamily: 'Comfortaa',
-          ),
+        child: ElevatedButton(
+          onPressed: () {
+            print('Puchiii');
+          },
+          child: Text('Say 👋 Puchii'),
+          style: ElevatedButton.styleFrom(
+              primary: Colors.blue[800],
+              padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 15.0),
+              textStyle: TextStyle(
+                fontSize: 18.0,
+              )),
         ),
       ),
       floatingActionButton: FloatingActionButton(
